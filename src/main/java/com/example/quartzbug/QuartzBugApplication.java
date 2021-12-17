@@ -17,9 +17,4 @@ public class QuartzBugApplication {
         SpringApplication.run(QuartzBugApplication.class, args);
     }
 
-    @Bean
-    public IntegrationDataSourceScriptDatabaseInitializer customIntegrationDataSourceInitializer(DataSource dataSource) {
-        return new IntegrationDataSourceScriptDatabaseInitializer(dataSource, new DatabaseInitializationSettings());
-    }
-
 }
