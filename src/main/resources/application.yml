@@ -1,0 +1,14 @@
+spring:
+    datasource:
+        url: jdbc:mariadb://localhost:3306/quartz_bug
+        username: root
+        password: test
+        driver-class-name: org.mariadb.jdbc.Driver
+
+    quartz:
+        jdbc:
+            comment-prefix:
+                - "#"
+                - "--"
+            initialize-schema: always
+        job-store-type: jdbc

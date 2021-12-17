@@ -1,0 +1,4 @@
+spring:
+    quartz:
+        jdbc:
+            schema: classpath:/db/quartz_tables.sql
